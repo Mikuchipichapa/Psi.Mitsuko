@@ -1,0 +1,160 @@
+h1{
+    color: rgb(162, 49, 255);
+    font-family: cursive;
+    font-size: 34px;
+    animation-duration: 3s;
+}
+
+p{
+   color: rgb(0, 0, 0);
+   font-size: 22px;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    color: blueviolet;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+}
+h3{
+   color:rgb(162, 49, 255);
+    font-size: 23px;
+}
+
+h4{
+  color:rgb(162, 49, 255);
+  font-size: 40px;
+
+}
+main{
+  color: rgb(0, 0, 0);
+   font-size: 22px;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+ol li{
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 20px;
+ 
+}
+ul li{
+  font-family: 'Times New Roman', Times, serif;
+ font-size: 20px;
+}
+
+button{
+  background-color: rgb(202, 146, 255);
+color: #ffffff;
+font-size: 20px;
+font-family: cursive;
+border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgb(148, 66, 255);
+  border: 2px solid rgb(202, 111, 255);
+  }
+
+header {
+    background: rgba(135, 0, 245, 0.5);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  nav {
+    float: left;
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  
+  nav ul li {
+    float: left;
+    font-family: Cursive;
+    font-size: 16px;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color:#ffffff;
+    text-decoration: none;
+  }
+  nav ul li:hover {
+    background: #9785ff;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(180, 68, 255);
+  }
+
+ 
+nav ul li:hover > .menu {
+  display:block;
+}
+
+.menu {
+  background-color: rgba(166, 136, 247, 0.5);
+  position: absolute;
+  display: none;
+  list-style: none;
+  padding: 0%;
+}
+
+.menu li{
+  float: none;
+}
+
+.menu li a{
+  display: block;
+  padding: 15px 15px 15px 20px;
+}
+
+.imgRedonda {
+  width:203px;
+  height:195px;
+  border-radius:150px;
+  border:10px solid #d193eeda;
+}
+
+.psico{
+  width:163px;
+  height:157px;
+  border-radius:130px;
+  border:4px solid #fff89a;
+}
+
+table {
+  border: rgba(212, 102, 255, 0.705) 5px solid;
+  color: #fff;
+}
+th {
+  background: rgb(171, 30, 226);
+}
+
+table th{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: rgb(255, 255, 255);
+
+}
+
+table td{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: black;
+background-color: #fff;
+}
+
+footer {
+  background-color: #8d2edb;
+  color: rgb(206, 159, 255);
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+h5{
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 34px;
+}

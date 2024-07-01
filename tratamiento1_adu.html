@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos: Tratamiento para adultos</title>
+    <script>
+        function verificarInscripcion() {
+            var edad = document.getElementById("edad").value;
+            var generoSeleccionado = false;
+
+            // Verificar si se seleccionó un género (radio button)
+            var generoRadios = document.getElementsByName("rgb");
+            for (var i = 0; i < generoRadios.length; i++) {
+                if (generoRadios[i].checked) {
+                    generoSeleccionado = true;
+                    break;
+                }
+            }
+
+            // Verificar si la edad es menor a 18
+            if (edad < 18) {
+                alert("Lo sentimos, debes tener al menos 18 años para inscribirte en esta página.");
+                return false; // Detener la inscripción
+            }
+
+            // Verificar si se seleccionó un género
+            if (!generoSeleccionado) {
+                alert("Por favor selecciona tu género para continuar con la inscripción.");
+                return false; // Detener la inscripción
+            }
+
+            // Si se pasa todas las validaciones, permitir el envío del formulario
+            return true;
+        }
+    </script>
+    <style>
+        h1{
+    color: rgb(97, 35, 212);
+    font-family: cursive;
+    font-size: 34px;
+    animation-duration: 3s;
+}
+
+p{
+   color: rgb(255, 255, 255);
+   font-size: 22px;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    color: rgb(156, 65, 216);
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+}
+h3{
+   color:rgba(138, 49, 255, 0.788);
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 23px;
+}
+
+h4{
+  color:rgb(109, 47, 150);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+
+}
+main{
+  color: rgb(255, 255, 255);
+   font-size: 22px;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background: rgba(120, 32, 179, 0.5);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  nav {
+    float: left;
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  
+  nav ul li {
+    float: left;
+    font-family: Cursive;
+    font-size: 16px;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color:#ffffff;
+    text-decoration: none;
+  }
+  nav ul li:hover {
+    background: #9531c4;
+  }
+
+  ul li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  ol li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  footer {
+    background-color: rgba(126, 59, 233, 0.733);
+    color: rgba(220, 143, 255, 0.829);
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  h5{
+    color: rgba(169, 132, 255, 0.829);
+    font-size: 40px;
+  }
+
+  strong{
+    color: mediumpurple;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  form ul li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: #ffffff;
+  }
+
+  form button{
+    font-family: cursive;
+    font-size: 16px;
+    background-color: rgb(189, 96, 243);
+    border-color: #503ab1;
+  }
+
+  form button:hover{
+      background: #6b068a;
+      border-color: rgb(218, 110, 233);
+      color: #ffffff;
+  }
+    </style>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Regresar a la pagina :3 </a></li>
+            <li><a href="">Inicio:3 </a></li>
+            <li><a href="#ip">Inscripcion:3 </a></li>
+        </ul>
+    </nav>
+</header>
+
+<body background="https://i.pinimg.com/564x/ae/ea/a6/aeeaa6c879ad01158d5d6f45da7291b7.jpg">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img src="https://i.pinimg.com/564x/68/8f/05/688f058270cfd5c6a722a3e24c83ddd3.jpg" width="190" height="220" align="Right">
+    <center>
+    <h1>Tratamiento para adultos</h1>
+    </center>
+    <main>¿Te intereso el curso sobre el tratamiento para adultos? Aqui podras encontrar muchas cosas relacionadas a los problemas
+        de los jovenes adultos, adultos de mediana edad y adultos mayores.</main>
+
+        <br>
+        <br>
+        <section> 
+        <h2>información</h2>
+        <img src="https://i.pinimg.com/564x/f0/13/5d/f0135d57e042e18e325aafad5b7832db.jpg" width="260" height="190" align="Left">
+        <p>La psicología de adultos es la ciencia que trata la conducta y los procesos mentales de los individuos en edad adulta. 
+            Concretamente, se centra en tres dimensiones de estos procesos: cognitiva, afectiva y conductual.
+            La terapia psicológica para adultos es un tratamiento eficaz para superar la depresión, ansiedad, estrés y otros problemas psicológicos, emocionales y conductuales.
+            Cuenta con diferentes métodos y herramientas para evaluar, diagnosticar y tratar los síntomas que afectan la calidad de vida.
+            Implica hablar con un profesional capacitado que te ayudará a comprender por qué te sientes deprimido o ansioso y te enseñará técnicas para superar estos sentimientos.
+            La terapia psicológica para adultos es una excelente oportunidad para vivir y sentirte mejor.</p>
+            <img src="https://i.pinimg.com/564x/8c/e3/b6/8ce3b6cb46217f814c5ad4cc7a7f0a59.jpg" width="250" height="250" align="Right">
+            <p>La Psicología de la Adultez y la Vejez se ocupa del estudio de los procesos psicológicos sujetos a
+                cambio y desarrollo durante el periodo de la juventud, la edad adulta intermedia y la vejez. El
+                cambio y la perspectiva de proceso, se estudian desde los modelos teóricos que lo fundamentan.
+                Cada etapa es analizada desde el desarrollo de las funciones físicas, cognitivas, de personalidad y
+                psicosociales, con especial acento en la época de la vejez. Todas estas áreas están sujetas a modificación a lo largo del tiempo en su doble perspectiva inter e intrapersonal, dentro de un mundo social que evoluciona. Por todo ello, esta área de conocimiento es compleja e imprescindible por su
+                carácter transversal tanto para la comprensión de la psicología humana como para el ejercicio profesional.
+                </p>
+                <img src="https://i.pinimg.com/564x/b2/a5/12/b2a512be93c53f122d8563a2353e2a89.jpg" width="250" height="250" align="Left">
+    </section>
+
+    <section>
+        <h2>Objetivo</h2>
+         <p>Los  objetivos terapéuticos establecidos en la terapia psicológica serán adecuados y acordados con el paciente en función de las necesidades y problemáticas que plantee. El psicólogo trabajará junto con el paciente para mejorar su bienestar emocional.</p>
+            <p>La psicoterapia es un proceso que elige el paciente con libertad y el resultado que se obtenga tras el tratamiento psicológico dependerá tanto de las competencias y destrezas profesionales del terapeuta como del grado de implicación y de motivación al cambio que tenga  el paciente.</p>
+
+            <p>Para el tratamiento con adultos y adultos mayores en psicología, es importante considerar varios aspectos clave:</p>
+
+            <img src="https://i.pinimg.com/564x/6a/9b/00/6a9b00bddbcbabd2800bfb76870ce783.jpg" width="250" height="250" align="Right">
+            <ol type="1.">
+                <li><strong>Evaluación Integral:</strong> Realizar una evaluación exhaustiva que incluya historia clínica, evaluación psicológica y evaluación de las condiciones médicas coexistentes. 
+                    Es crucial entender el contexto completo del individuo para proporcionar un tratamiento efectivo.</li>
+                    <br>
+
+                <li><strong>Enfoque Centrado en el Individuo:</strong> Adaptar el tratamiento a las necesidades específicas y características del individuo, considerando factores como la edad, 
+                    el estado de salud física y mental, así como las circunstancias sociales y culturales.</li>
+                    <br>
+
+                <li><strong>Terapia Basada en la Evidencia:</strong> Utilizar enfoques terapéuticos que estén respaldados por evidencia científica para tratar condiciones específicas como 
+                    la depresión, la ansiedad, el trastorno de estrés postraumático, entre otros.</li>
+                    <br>
+
+                <li><strong>Psicoeducación:</strong> Proporcionar información clara y educativa sobre los problemas de salud mental, estrategias de afrontamiento y manejo del estrés. 
+                    Esto puede ayudar a empoderar al paciente y mejorar la adherencia al tratamiento.</li>
+                    <br>
+                    <img src="https://i.pinimg.com/564x/ef/66/25/ef662516a3364b3d9f52f870a45a7a23.jpg" width="250" height="250" align="Right">
+                <li><strong>Consideraciones Generacionales:</strong> Reconocer las diferencias generacionales en términos de experiencias de vida, actitudes hacia la salud mental y expectativas de tratamiento. 
+                    Esto puede influir en la forma en que se establece la relación terapéutica y se abordan los problemas.</li>
+                    <br>
+
+                <li><strong>Enfoque Holístico:</strong> No solo abordar los síntomas psicológicos, sino también considerar el bienestar general del individuo, incluyendo aspectos emocionales, sociales y espirituales 
+                    si son pertinentes para el paciente.</li>
+                    <br>
+
+                <li><strong>Colaboración Interdisciplinaria:</strong> Trabajar en conjunto con profesionales de la salud, como médicos, enfermeras, trabajadores sociales y terapeutas ocupacionales, 
+                    para garantizar una atención integral y coordinada.</li>
+                    <br>
+                <li><strong>Adaptación a Cambios Relacionados con la Edad:</strong> Reconocer y adaptarse a los cambios relacionados con la edad, como la pérdida de seres queridos, cambios en la función cognitiva y física, 
+                    y ajustes en el estilo de vida.</li>
+                    <img src="https://i.pinimg.com/564x/f5/08/8e/f5088e158a86d4f48c0ca0d6812f6be9.jpg" width="250" height="250" align="Left">
+
+            </ol>
+
+            <p>En cambio, la terapia con personas de la tercera edad requiere consideraciones especiales debido a los cambios físicos, emocionales y sociales que suelen experimentar. Aquí hay algunas pautas generales 
+                que un psicólogo podría seguir al llevar a cabo terapia con una persona mayor:</p>
+
+                <ol type="1.">
+                    <li><strong>Establecer una relación de confianza:</strong> Es crucial crear un ambiente cálido y de confianza desde el inicio. Las personas mayores pueden ser más reservadas al principio, 
+                        por lo que es importante que se sientan cómodas y escuchadas.</li>
+                        <br>
+                        
+                    <li><strong>Adaptar el ritmo y el estilo de la sesión:</strong> Puede ser necesario ajustar la duración y la frecuencia de las sesiones según las necesidades y capacidades del paciente. 
+                        Algunas personas mayores pueden necesitar sesiones más cortas o descansos más frecuentes.</li>
+                        <br>
+
+                    <li><strong>Respetar el ritmo y las capacidades cognitivas:</strong> Es fundamental adaptar el enfoque terapéutico según la capacidad cognitiva del paciente. Algunas personas mayores pueden tener 
+                        dificultades con la memoria o la concentración, por lo que el psicólogo debe ser paciente y comprensivo.</li>
+                        <br>
+
+                    <li><strong>Considerar la historia de vida y las experiencias:</strong> La vida de una persona mayor puede estar marcada por diversas experiencias y eventos significativos. Comprender su historia 
+                        personal puede ser crucial para entender su situación actual y los problemas que enfrenta.</li>
+                        <br>
+
+                    <li><strong>Incorporar el contexto familiar y social:</strong> Las relaciones familiares y sociales son especialmente importantes para las personas mayores. Es útil involucrar a la familia cuando 
+                        sea posible y considerar el impacto de las relaciones sociales en el bienestar emocional del paciente.</li>
+                        <br>
+                        <img src="https://i.pinimg.com/564x/e1/87/99/e18799ce4f8e7af33e9923aac290be21.jpg" width="250" height="250" align="Right">
+                    <li><strong>Explorar preocupaciones específicas de la vejez:</strong> Muchas personas mayores enfrentan desafíos como la pérdida de seres queridos, problemas de salud, jubilación o cambios en la autonomía. 
+                        Es importante abordar estas preocupaciones de manera sensible y comprensiva.</li>
+                        <br>
+
+                    <li><strong>Fomentar la resiliencia y el bienestar emocional:</strong>  Ayudar a las personas mayores a encontrar significado y propósito en esta etapa de la vida puede ser un objetivo importante de la terapia. 
+                        Esto puede incluir actividades que promuevan el bienestar emocional y el sentido de comunidad.</li>
+                        <br>
+
+                    <li><strong>Utilizar enfoques terapéuticos adecuados:</strong> Dependiendo de las necesidades del paciente, el psicólogo puede optar por enfoques terapéuticos como la terapia cognitivo-conductual, la terapia centrada en la persona, 
+                        la terapia de reminiscencia, entre otros, adaptándolos según las capacidades y preferencias del paciente.</li>
+                </ol>
+    </section>
+
+    <section>
+        <h3><a name="ip">Inscripcion del curso</a></h3>
+        <p> Si estas interesado/a en instribirte, por favor llene este formulario, si no estas interesado/a y solo veniste por curiosidad esta
+            muy bien :3 </p>
+            <form action="mayor.php" method="GET" onsubmit="return verificarInscripcion()">
+                <ul type="none">
+                    <li>
+                      <label for="name"> Nombre(s):</label>
+                      <input type="text" id="nombre" name="nombre"/>
+                   </li>
+                     <br>
+                   <li>
+                      <label for="name"> Apellido paterno:</label>
+                      <input type="text" id="apellido" name="apellido"/>
+                   </li>
+                      <br>
+                   <li>
+                    <label for="name"> Apellido materno:</label>
+                    <input type="text" id="ape" name="ape"/>
+                   </li>
+                    <br>
+                    <li>
+                        <label for="name"> Fecha de nacimiento</label>
+                        <input type="text" id="fecha" name="fecha"/>
+                       </li>
+                        <br>
+                   <li>
+                        <label for="name"> Edad:</label>
+                        <input type="number" id="edad" name="edad" required min="0"/>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="name"> Genero del paciente:</label><br><br>
+                        <label for="name"> Mujer</label>
+                        <input type="radio" name="rgb" value="mujer"/>
+                        <label for="name"> Hombre</label>
+                        <input type="radio" name="rgb" value="hombre"/>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="mail"> Correo electronico:</label>
+                        <input type="email" id="correo" name="correo"/>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="msg"> ¿Por que te intereso?</label>
+                        <textarea id="msg" name="msg"></textarea>
+                    </li>
+                    <br>
+                    <div class="curso">
+                        <h2> Años de curso </h2>
+                        <select name="cur" value="any">
+                            <option>Seleccione...</option>
+                            <option value="Un año"> Un año</option>
+                            <option value="2 años"> 2 años</option>
+                            <option value="3 años"> 3 años</option>
+                          </div>
+                        </select>
+                    <br>
+               <br>
+                <br>
+                <button type="submit"> Acceder</button> 
+                <br>
+                <br> 
+                <button type="reset"> Borrar </button>
+                </ul>
+              </form>
+    </section>
+
+    <footer>
+        <h5>ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـ Contacto ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ </h5>
+        <p>Dr. Mitsuko Soto</p>
+        <p> Correo: ********@gmail.com </p>
+    </footer>
+
+</body>
+</html>

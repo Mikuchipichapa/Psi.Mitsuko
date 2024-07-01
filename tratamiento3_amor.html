@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      function verificarInscripcion() {
+          var edad = document.getElementById("edad").value;
+          var generoSeleccionado = false;
+
+          // Verificar si se seleccionó un género (radio button)
+          var generoRadios = document.getElementsByName("rgb");
+          for (var i = 0; i < generoRadios.length; i++) {
+              if (generoRadios[i].checked) {
+                  generoSeleccionado = true;
+                  break;
+              }
+          }
+
+          // Verificar si la edad es menor a 18
+          if (edad < 18) {
+              alert("Lo sentimos, debes tener al menos 18 años para inscribirte en esta página.");
+              return false; // Detener la inscripción
+          }
+
+          // Verificar si se seleccionó un género
+          if (!generoSeleccionado) {
+              alert("Por favor selecciona tu género para continuar con la inscripción.");
+              return false; // Detener la inscripción
+          }
+
+          // Si se pasa todas las validaciones, permitir el envío del formulario
+          return true;
+      }
+  </script>
+    <style>
+        h1{
+    color: rgb(252, 72, 198);
+    font-family: cursive;
+    font-size: 34px;
+}
+
+p{
+   color: rgb(255, 255, 255);
+   font-size: 22px;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    color: rgb(216, 65, 208);
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+}
+h3{
+   color:rgb(243, 94, 169);
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 23px;
+}
+
+h4{
+  color:rgba(255, 55, 178, 0.884);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+
+}
+main{
+  color: rgb(255, 255, 255);
+   font-size: 22px;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background: rgba(255, 101, 222, 0.733);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  nav {
+    float: left;
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  
+  nav ul li {
+    float: left;
+    font-family: Cursive;
+    font-size: 16px;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color:#ffffff;
+    text-decoration: none;
+  }
+  nav ul li:hover {
+    background: #ff9dea;
+  }
+
+  ul li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  footer {
+    background-color: rgba(253, 91, 212, 0.61);
+    color: rgba(220, 143, 255, 0.829);
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  h5{
+    color: rgb(255, 141, 204);
+    font-size: 40px;
+  }
+
+  strong{
+    color: #ff9dea;
+    font-size: 25px;
+  }
+
+  em{
+    color: rgb(182, 0, 91);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+  }
+
+  ol li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
+    color: #ffffff;
+  }
+
+  form ul li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: #ffffff;
+  }
+
+  form button{
+    font-family: cursive;
+    font-size: 16px;
+    background-color: rgb(243, 96, 219);
+    border-color: #b13a7f;
+  }
+
+  form button:hover{
+      background: #e71689;
+      border-color: rgb(233, 110, 178);
+      color: #ffffff;
+  }
+    </style>
+    <title>Tratamiento en el amor</title>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Regresar a la pagina :3 </a></li>
+            <li><a href="">Inicio:3 </a></li>
+            <li><a href="#ic">Inscripcion :3 </a></li>
+        </ul>
+    </nav>
+</header>
+
+<body background="https://i.pinimg.com/736x/a9/14/4f/a9144f0ddccfc874fdd9fe36538f8124.jpg">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img src="https://i.pinimg.com/564x/31/24/94/312494bbac70f154351d18be13cc0ac9.jpg" width="200" height="200" align="Left">
+    <center>
+    <h1>Tratamiento para parejas</h1>
+    </center>
+     <main>¿Te intereso el curso sobre el tratamiento para parejas? Si ese es el caso, aqui es el lugar indicado para aprender mas sobre 
+        sobre el tema del amor, como tratar con una pareja de novios o de casados.
+     </main>
+     <br>
+     <br>
+
+     <section>
+        <h2>Informacion</h2>
+        <img src="https://i.pinimg.com/originals/d1/ef/d5/d1efd55e7419d87edfe6e92e33255dbe.jpg" width="200" height="200" align="Left">
+        <p>La terapia de pareja, también denominada psicoterapia de pareja, es el tratamiento clínico psicológico que se brinda a ambos miembros de una relación sentimental, en su condición de enamorados, novios, esposos, convivientes, 
+            separados y/o divorciados, por parte de un psicoterapeuta o terapeuta profesional, debidamente capacitado y facultado por los respectivos organismos oficiales reguladores del país donde ejerce su profesión.
+            <img src="https://i.pinimg.com/564x/5a/79/41/5a7941610ffbdf863567eb158497eedb.jpg" width="200" height="200" align="Right">
+            En una terapia de pareja, el psicoterapeuta se centrará fundamentalmente en mejorar la comunicación en la relación. De esta manera, se aprenderá a controlar los impulsos y emociones para afrontar y resolver los conflictos que
+            puedan surgir de una manera más eficiente. Además, se enseñará a ver los problemas desde otra perspectiva, intentando relativizar los mismos sin que los personalismos, la soberbia u orgullo pueda distorsionar los juicios de valor.</p>
+
+            <p>En la terapia de parejas se generan nuevas posibilidades, soluciones creativas y aprendizajes para saber cómo estructurar la relación con respecto al amor y respeto. Muchas parejas necesitan de terapia para resolver sus 
+                conflictos y cada vez es una opción más recurrente, ya que todos necesitamos a veces guía y ayuda para solucionar nuestros problemas.
+                En este artículo te hablaremos de en qué consiste la terapia de parejas, cuáles son sus objetivos y qué ejercicios puedes hacer para mejorar tu relación.</p>
+
+                <img src="https://i.pinimg.com/564x/3b/b7/41/3bb74176461c01e9197085a30cd97713.jpg" width="200" height="200" align="Right">
+                <h3>¿Para que sirve?</h3>
+                <p>La terapia de parejas sirve para mejorar la relación íntima entre individuos. Un profesional en psicología de pareja se encarga de guiarlos y les da herramientas para que puedan solucionar próximos desacuerdos o asuntos por sí solos en el futuro.</p>
+                <img src="https://i.pinimg.com/564x/f0/ab/54/f0ab542d2d4ed6a664849ecc656d8d1a.jpg" width="200" height="200" align="Left">
+                <p>También puede ocurrir que uno sienta que el otro no está presente en la relación y que no le dedica tiempo. Asimismo, la terapia puede ser útil para parejas que han vivido una infidelidad que genera desconfianza y problemas de comunicación.</p>
+                 <br>
+                 <br>
+                <h3>¿En que consiste la terapia para parejas?</h3>
+                <p>La terapia de parejas consiste en un tratamiento profesional que aplica procedimientos psicológicos sobre dos personas que mantienen una relación íntima, con el fin de mejorar su comunicación.</p>
+                <p><strong>Los objetivos de la terapia de parejas son:</strong></p>
+                <img src="https://i.pinimg.com/564x/b5/80/2b/b5802ba6c47f40c1610aa94f1e7a54ea.jpg" width="200" height="200" align="Right">
+                <ol type="I">
+                    <li>Reconocer el problema</li>
+                    <li>Tolerar y respetar las diferencias de la pareja</li>
+                    <li>Aprender a interpretar las señales y emociones del otro</li>
+                    <li>Expresar sentimientos con más claridad</li>
+                    <li>Comprender las pautas repetitivas y tóxicas de comportamiento que tiene cada apersona dentro de la relación</li>
+                    <li>Establecer un acuerdo para renovar la relación</li>
+                    <li>Modificar actitudes</li>
+                    <li>Crear lazos de comunicación renovada y sana</li>
+                </ol>
+     </section>
+     <img src="https://i.pinimg.com/564x/7e/d3/2f/7ed32f652e9efd3d84b20651088ed2e6.jpg" width="200" height="260" align="Right">
+     <section>
+        <h2>Objetivo</h2>
+        <p>Su finalidad es colaborar a que la pareja encuentre solución a sus conflictos, cambien algunas conductas dañinas, asuman sus problemas y mejoren sus canales comunicativos para obtener los resultados deseados.
+            En una terapia de pareja, el terapeuta se centra fundamentalmente en mejorar la comunicación en la relación. De esta manera, se enseña a controlar los impulsos y emociones para afrontar y resolver los conflictos
+            que puedan surgir de una manera más eficiente.</p>
+     </section>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+       <center>
+          <img src="https://i.pinimg.com/564x/e2/b5/ba/e2b5ba3bd03699089a26a7caa7adb987.jpg" width="680" height="400">
+       </center>
+     <br>
+     <br>
+     <section>
+        <h2>Tipos de terapia para parejas</h2>
+        <img src="https://i.pinimg.com/564x/65/9a/17/659a17330820c7928fa8ec91311dec7d.jpg" width="200" height="200" align="Left">
+        <br>
+        <br>
+        <p><em>Terapia de pareja cognitivo-conductual</em></p>
+        <p>Es el tipo de terapia más conocido actualmente, y se aplica en distintos ámbitos de la psicología. Bajo este tipo de terapia se abordan y trabajan las expectativas que se tienen en la relación, las conductas 
+            que molestan y causan sufrimiento en algunos de los miembros de la relación. De igual forma, se tratan aspectos como bajo refuerzo mutuo y control excesivo en la relación, apuntando a una transformación a 
+            nivel de creencias, pensamientos y comportamientos.</p>
+            <br>
+            <br>
+       
+        <p><em>Terapia sistémica para pareja</em></p>
+        <img src="https://i.pinimg.com/564x/b6/27/c6/b627c61cb028bb0e6eed7ac8f3c1ac5b.jpg" width="200" height="200" align="Right">
+        
+        <p>Es otro de los tipos de terapias de pareja que se implementan en ocasiones, también sirve en el ámbito de la terapia familiar.
+            Con la terapia sistémica para pareja, se le ve a ésta como un sistema abierto, en el que se llevan a cabo una serie de intercambios de normas y de roles. Es así como, desde este tipo de terapia, se vinculan las 
+            situaciones problemáticas a deficiencias en la comunicación y en la empatía.</p>
+            <br>
+            <br>
+        <p><em>Terapia de pareja humanista</em></p>
+        <p>Aunque es menos conocida, este tipo de terapia de pareja con base al enfoque humanista puede ayudar en muchos casos.
+            Podría aplicarse cuando las parejas buscan desarrollar sus habilidades, y no solamente si hay algún problema en la relación. 
+            A través de esta terapia se optimizan las potencialidades de ambos, se busca derribar máscaras y encaminar a la pareja hacia el autodescubrimiento.</p>
+            <br>
+            <img src="https://i.pinimg.com/564x/aa/7a/f2/aa7af202bd6d8256e02811d811dc7b43.jpg" width="200" height="200" align="Right">
+            <br>
+            <p><em>Terapia de pareja psicodinámica</em></p>
+            <p>Desde esta perspectiva la terapia de pareja se centra en los problemas que se produjeron durante la infancia en los miembros de la relación, o en el desarrollo temprano. Estos problemas se reconocen como la causa
+            de problemas de pareja. De igual forma, entre otras cosas, este enfoque propone el análisis del uso de mecanismos de defensa que entorpecen un desarrollo sano de la relación.</p>
+            <br>
+            <br>
+            <img src="https://i.pinimg.com/564x/ff/8f/01/ff8f0123913982df51842a7fba288a90.jpg" width="200" height="200" align="Left">
+     </section>
+          <br>
+          <br>
+          <br>
+     <section>
+        <h3><a name="ic">Inscripcion del curso</a></h3>
+        <p> Si estas interesado/a en instribirte, por favor llene este formulario, si no estas interesado/a y solo veniste por curiosidad esta
+            muy bien :3 </p>
+            <form action="amor.php" method="GET" onsubmit="return verificarInscripcion()">
+                <ul type="none">
+                    <li>
+                      <label for="name"> Nombre(s):</label>
+                      <input type="text" id="nombre" name="nombre"/>
+                   </li>
+                     <br>
+                   <li>
+                      <label for="name"> Apellido paterno:</label>
+                      <input type="text" id="apellido" name="apellido"/>
+                   </li>
+                      <br>
+                   <li>
+                    <label for="name"> Apellido materno:</label>
+                    <input type="text" id="ape" name="ape"/>
+                   </li>
+                    <br>
+                    <li>
+                        <label for="name"> Fecha de nacimiento</label>
+                        <input type="text" id="fecha" name="fecha"/>
+                       </li>
+                        <br>
+                   <li>
+                        <label for="name"> Edad:</label>
+                        <input type="number" id="edad" name="edad" required min="0"/>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="name"> Genero del paciente:</label><br><br>
+                        <label for="name"> Mujer</label>
+                        <input type="radio" name="rgb" value="mujer"/>
+                        <label for="name"> Hombre</label>
+                        <input type="radio" name="rgb" value="hombre"/>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="mail"> Correo electronico:</label>
+                        <input type="email" id="correo" name="correo"/>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="msg"> ¿Por que te intereso?</label>
+                        <textarea id="msg" name="msg"></textarea>
+                    </li>
+                    <br>
+                    <div class="curso">
+                        <h2> Años de curso </h2>
+                        <select name="cur" value="any">
+                            <option>Seleccione...</option>
+                            <option value="Un año"> Un año</option>
+                            <option value="2 años"> 2 años</option>
+                            <option value="3 años"> 3 años</option>
+                          </div>
+                        </select>
+                    <br>
+               <br>
+                <br>
+                <button type="submit"> Acceder</button> 
+                <br>
+                <br> 
+                <button type="reset"> Borrar </button>
+                </ul>
+              </form>
+    </section>
+     
+    <footer>
+        <h5>ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـ Contacto ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ </h5>
+        <p>Dr. Mitsuko Soto</p>
+        <p> Correo: ********@gmail.com </p>
+    </footer>
+</body>
+</html>

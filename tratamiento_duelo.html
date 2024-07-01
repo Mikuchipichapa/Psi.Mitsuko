@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      function verificarInscripcion() {
+          var edad = document.getElementById("edad").value;
+          var generoSeleccionado = false;
+
+          // Verificar si se seleccionó un género (radio button)
+          var generoRadios = document.getElementsByName("rgb");
+          for (var i = 0; i < generoRadios.length; i++) {
+              if (generoRadios[i].checked) {
+                  generoSeleccionado = true;
+                  break;
+              }
+          }
+
+          // Verificar si la edad es menor a 18
+          if (edad < 18) {
+              alert("Lo sentimos, debes tener al menos 18 años para inscribirte en esta página.");
+              return false; // Detener la inscripción
+          }
+
+          // Verificar si se seleccionó un género
+          if (!generoSeleccionado) {
+              alert("Por favor selecciona tu género para continuar con la inscripción.");
+              return false; // Detener la inscripción
+          }
+
+          // Si se pasa todas las validaciones, permitir el envío del formulario
+          return true;
+      }
+  </script>
+    <style>
+        h1{
+    color: rgb(45, 131, 42);
+    font-family: cursive;
+    font-size: 34px;
+    animation-duration: 3s;
+}
+
+p{
+   color: rgb(255, 255, 255);
+   font-size: 22px;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    color: rgb(18, 150, 18);
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+}
+h3{
+   color:rgb(26, 187, 4);
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 23px;
+}
+
+main{
+  color: rgb(255, 255, 255);
+   font-size: 22px;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background: rgba(22, 211, 123, 0.575);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  nav {
+    float: left;
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  
+  nav ul li {
+    float: left;
+    font-family: Cursive;
+    font-size: 16px;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color:#ffffff;
+    text-decoration: none;
+  }
+  nav ul li:hover {
+    background: #337e5b;
+  }
+
+  ul li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  footer {
+    background-color: rgba(29, 163, 96, 0.637);
+    color: rgba(38, 177, 101, 0.685);
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  ul li{
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
+  }
+  strong{
+    color: rgba(65, 214, 28, 0.863);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  
+  form ul li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: #ffffff;
+  }
+
+  form button{
+    font-family: cursive;
+    font-size: 16px;
+    background-color: rgb(167, 243, 96);
+    border-color: #6ab13a;
+  }
+
+  form button:hover{
+      background: #124912;
+      border-color: rgb(146, 255, 124);
+      color: #ffffff;
+  }
+    </style>
+    <title>Cursos: Tratamiento para el duelo</title>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Regresar a la pagina :3 </a></li>
+            <li><a href="">Inicio:3 </a></li>
+            <li><a href="#i">Inscripcion </a></li>
+        </ul>
+    </nav>
+</header>
+
+<body background="https://i.pinimg.com/564x/67/9a/6e/679a6e4b607f505919898dbe71dd4ee8.jpg">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <center>
+    <h1>✟ Tratamiendo de duelo ✟</h1>
+    </center>
+    <main>¿Te intereso el curso sobre el tratamiendo del duelo? Aunque es un tema delicado te apetece ayudar 
+        ayudar a las personas que estan pasando por la etapa del duelo por perder a su ser querido, aqui podras 
+        aprender a como llevar a cabo la etapa. Estos cursos pretenden ofrecer a los participantes los conocimientos
+         y herramientas terapéuticas necesarias para la terapia de duelo; y contribuye a que éstos adopten una actitud
+          correcta para relación con el paciente, tan importante para tratar este asunto.</main>
+
+    <br>
+    <br>
+    <img src="https://i.pinimg.com/564x/ff/8a/f1/ff8af1938d6c5da75f4813b15a5b3b2d.jpg" width="300" height="200" align="Right">
+    <section>
+    <h2>✞ Informacion</h2>
+    <br>
+    <h3>✞ ¿Que es la terapia del duelo?</h3>
+    <p>La terapia de duelo hace referencia a la forma de psicoterapia que tiene el
+        objetivo de ayudar a un individuo a enfrentar y superar una pérdida, principalmente de un ser querido, de una manera saludable.
+        Puesto que la muerte de alguien a quien queremos es una de las experiencias más devastadoras que podemos sufrir, 
+        y es uno de los mayores retos a los que se enfrenta una persona a lo largo de su vida, son muchos los hombres y mujeres 
+        que precisan de la ayuda de los profesionales de la psicología especializados en este campo.</p>
+
+        <p>Hay que recalcar que el duelo es un proceso muy lento de superar, puede llevar meses o años de tratamiento psicologico pero
+            es dependiendo de cada individuo, algunos les afecta mas que otros sea a nivel mental, nivel fisico o social.</p>
+            <img src="https://i.pinimg.com/564x/67/34/76/673476e42b6844974569e2348f40cc89.jpg" width="300" height="200" align="Left">
+           <p> Hablar de la muerte es un tema delicado paara algunas personas, e incluso se puede categorizar como un tema prohibido cuando
+            no deberia ser asi.No hablar de la muerte nos lleva al desconocimiento, a continuar con el miedo hacía ella. Este miedo, cuando
+            es un miedo protector, el que te aleja de peligros, es beneficioso ya que es un mecanismo de supervivencia. Sin embargo, cuando 
+            esa sensación de miedo a la muerte es extrema, convierte tu vida en un sinvivir.</p>
+             <img src="https://i.pinimg.com/564x/a7/65/e5/a765e502df58d27e9187fadef59cbfa6.jpg" width="290" height="200" align="Right">
+            <p>Los sentimientos típicos experimentados por los individuos en duelo, y tratados por los psicólogos y psicoterapeutas especializados
+                en este tipo de terapia, incluyen tristeza, ansiedad, ira, soledad, culpa, aislamiento o confusión. Asimismo, los cambios a nivel cognitivo,
+                afectivo y conductual también incluyen sentimientos de desorganización y cansancio, problemas de concentración, problemas de sueño, cambios de apetito,
+                pesadillas o pensamientos constantes sobre el difunto. Hay casos en que a los niños se ven afectados por la perdida de un ser querido que pueden llegar a
+                padecer un tipo de trauma sobre la muerte (si es que los padres o tutores no tocaron el tema)</p>
+                <img src="https://i.pinimg.com/736x/2e/da/46/2eda4676801e222e18a86fb4e26f04c9.jpg" width="300" height="400" align="Left">
+
+    </section>
+
+    <section>
+        <h2>✞ Objetivo</h2>
+          <p>El propósito de la terapia de duelo es ayudar a restablecer el equilibrio emocional de los pacientes a través del proceso de asesoramiento psicológico en el que se
+           trabajan los sentimientos, pensamientos y recuerdos asociados con la pérdida de un ser querido. Aunque el duelo puede ocurrir también para otros tipos de pérdida 
+           (como la pérdida de objetivos vitales, ideales y relaciones), esta terapia generalmente se dirige hacia un ajuste positivo después de la muerte de un ser querido.</p>
+
+           <p>La terapia de duelo permite al paciente entender y reconocer los aspectos normales del proceso de duelo, le ayuda a hacer frente al dolor asociado con la pérdida,
+             a sentirse apoyado en un momento tan delicado y de importantes cambios en su vida y a desarrollar estrategias para poder superar esta situación de manera saludable.</p>
+                  <img src="https://i.pinimg.com/564x/e1/7e/e4/e17ee4c0f57660b7dafd4f35924c7599.jpg" width="290" height="290" align="Right">
+            <p>La terapia de duelo también es un reto importante para los psicólogos, que deben dar respuesta a esta necesidad con una formación actualizada y que les permita adquirir 
+            las herramientas para la identificación, prevención y tratamiento de situaciones de duelo y pérdidas.Los psicólogos y terapeutas que deseen dedicarse a este tipo de terapia,
+            deben complementar sus estudios universitarios con alguna acción formativa especializada en este ámbito.</p>
+            <br>
+            <br>
+
+        <h3>✞ ¿Cómo funciona este tipo de terapia psicológica?</h3>
+            <p>Estas son algunas de las pautas que los psicólogos utilizan en terapia de duelo para contribuir a que los pacientes superen el duelo.</p>
+
+            <ul type="Circle">
+                <li><strong>Reestructuración cognitiva:</strong> La reestructuración cognitiva es una estrategia por la cual el terapeuta contribuye a que el paciente se cuestione sus creencias que le
+                    producen malestar y las sustituya por otras más adaptativas. Por ejemplo, muchas personas que experimentan duelo por la pérdida de un ser querido creen que están solas
+                    ante la muerte, o que no pueden amar a más gente para no volver a sufrir de esa manera. En terapia, se plantean razonamientos en los que se ve la nula utilidad y el escaso realismo de esas ideas.</li>
+                         <img src="https://i.pinimg.com/736x/7d/04/db/7d04db00a4b433748aafac97e19d9907.jpg" width="230" height="300" align="Right">
+                    <br>
+                    <br>
+                <li><strong>Activación conductual:</strong> La activación conductual se usa en pacientes con síntomas depresivos, y se basa fundamentalmente a crear las condiciones para que la persona vuelva a adoptar un estilo de vida activo.
+                    Para ello, se busca que el paciente se comprometa con la realización de ciertas actividades en su vida cotidiana, de manera que se rompa el círculo vicioso de la pasividad y el sedentarismo. Involucrarse físicamente
+                    en actividades estimula el pensamiento y hace aparecer sensaciones y sentimientos nuevos.</li>
+                    <br>
+                    <br>
+                <li><strong>Desensibilización sistemática:</strong> En los casos en los que el duelo patológico vaya de la mano de traumas psicológicos (por ejemplo, por haber presenciado una muerte repentina) se utilizan técnicas propias de los trastornos de ansiedad,
+                    como la desensibilización sistemática. La idea es asociar los pensamientos intrusivos vinculados al trauma con sensaciones neutrales, que no generan malestar. De esta manera, estas imágenes mentales pierden poder de influencia sobre nosotros,
+                    dejamos de prestarles atención, y finalmente van desapareciendo poco a poco.</li>
+                    <img src="https://i.pinimg.com/564x/17/13/db/1713db96e404b0d870c7c575d83e2bbe.jpg" width="200" height="200" align="Right">
+                    <br>
+            </ul>
+                    <img src="https://i.pinimg.com/564x/33/29/4c/33294ca3d19493bb4e08f9e78a6e1ee5.jpg" width="200" height="200" align="Left">
+                <p>Al hablar de la muerte no se busca desensibilizar sobre el tema, al contrario se busca la aceptación de la pérdida y del duelo con la perspectiva de una pronta superación
+                    El duelo y el dolor de la pérdida de un ser amado es algo inevitable se hable o no de la muerte previamente, pero al hablar de la muerte la capacidad de aceptación se aumenta.
+                    Se comienza a entender la muerte como un proceso natural de un ciclo de vida que no podemos evitar y se comprende un nuevo estado del ser amado donde no sufre.
+                    Entendiendo esto se puede decir que, hablar de la muerte facilita el duelo y ayuda a la superación de la misma.</p>
+                    <img src="https://i.pinimg.com/564x/32/2a/70/322a70ee480ee4af8572a1cec33f1305.jpg" width="200" height="200" align="Right">
+
+                <p>Sea como sea la muerte, precedida o inesperada, es dura
+                    Sin embargo, cuando estamos en los tratamientos y cuidados de la persona amada nos vamos enfrentando a su despedida.
+                    Claro, esto dependerá de la percepción de cada quien, pero estar allí en los últimos días de su vida puede dar un alivio durante el duelo.
+                    Aunque sigue siendo un momento difícil de afrontar, se puede estar mejor preparado ante la situación, conectar de una forma natural que brinde a ambos una experiencia de crecimiento y no de dolor.</p>
+
+                <p> Hay que recordar que para paz, nuestra muerte ilumina nuestra vida. Si nuestra muerte carece de sentido, dice paz, tampoco lo tuvo nuestra vida.</p>
+    </section>
+
+    <section>
+        <h3><a name="i">Inscripcion del curso</a></h3>
+        <p> Si estas interesado/a en instribirte, por favor llene este formulario, si no estas interesado/a y solo veniste por curiosidad esta
+            muy bien :3 </p>
+            <form action="duelo.php" method="GET" onsubmit="return verificarInscripcion()">
+              <ul type="none">
+                  <li>
+                    <label for="name"> Nombre(s):</label>
+                    <input type="text" id="nombre" name="nombre"/>
+                 </li>
+                   <br>
+                 <li>
+                    <label for="name"> Apellido paterno:</label>
+                    <input type="text" id="apellido" name="apellido"/>
+                 </li>
+                    <br>
+                 <li>
+                  <label for="name"> Apellido materno:</label>
+                  <input type="text" id="ape" name="ape"/>
+                 </li>
+                  <br>
+                  <li>
+                      <label for="name"> Fecha de nacimiento</label>
+                      <input type="text" id="fecha" name="fecha"/>
+                     </li>
+                      <br>
+                 <li>
+                      <label for="name"> Edad:</label>
+                      <input type="number" id="edad" name="edad" required min="0"/>
+                  </li>
+                  <br>
+                  <li>
+                      <label for="name"> Genero del paciente:</label><br><br>
+                      <label for="name"> Mujer</label>
+                      <input type="radio" name="rgb" value="mujer"/>
+                      <label for="name"> Hombre</label>
+                      <input type="radio" name="rgb" value="hombre"/>
+                  </li>
+                  <br>
+                  <li>
+                      <label for="mail"> Correo electronico:</label>
+                      <input type="email" id="correo" name="correo"/>
+                  </li>
+                  <br>
+                  <li>
+                      <label for="msg"> ¿Por que te intereso?</label>
+                      <textarea id="msg" name="msg"></textarea>
+                  </li>
+                  <br>
+                  <div class="curso">
+                      <h2> Años de curso </h2>
+                      <select name="cur" value="any">
+                          <option>Seleccione...</option>
+                          <option value="Un año"> Un año</option>
+                          <option value="2 años"> 2 años</option>
+                          <option value="3 años"> 3 años</option>
+                        </div>
+                      </select>
+                  <br>
+             <br>
+              <br>
+              <button type="submit"> Acceder</button> 
+              <br>
+              <br> 
+              <button type="reset"> Borrar </button>
+              </ul>
+            </form>
+
+    </section>
+
+    <footer>
+        <h3>ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـ Contacto ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ </h3>
+        <p>Dr. Mitsuko Soto</p>
+        <p> Correo: ********@gmail.com </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Cursos: Tratamiento de menores</title>
+    <script>
+        function verificarInscripcion() {
+            var edad = document.getElementById("edad").value;
+            var generoSeleccionado = false;
+
+            // Verificar si se seleccionó un género (radio button)
+            var generoRadios = document.getElementsByName("rgb");
+            for (var i = 0; i < generoRadios.length; i++) {
+                if (generoRadios[i].checked) {
+                    generoSeleccionado = true;
+                    break;
+                }
+            }
+
+            // Verificar si la edad es menor a 18
+            if (edad < 18) {
+                alert("Lo sentimos, debes tener al menos 18 años para inscribirte en esta página.");
+                return false; // Detener la inscripción
+            }
+
+            // Verificar si se seleccionó un género
+            if (!generoSeleccionado) {
+                alert("Por favor selecciona tu género para continuar con la inscripción.");
+                return false; // Detener la inscripción
+            }
+
+            // Si se pasa todas las validaciones, permitir el envío del formulario
+            return true;
+        }
+    </script>
+    <style>
+        h1{
+    color: rgb(49, 179, 255);
+    font-family: cursive;
+    font-size: 34px;
+    animation-duration: 3s;
+}
+
+p{
+   color: rgb(255, 255, 255);
+   font-size: 22px;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    color: rgb(43, 107, 226);
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+}
+h3{
+   color:rgba(49, 241, 255, 0.788);
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 23px;
+}
+
+h4{
+  color:rgb(47, 109, 150);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+
+}
+main{
+  color: rgb(255, 255, 255);
+   font-size: 22px;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background: rgba(30, 135, 255, 0.5);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  nav {
+    float: left;
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  
+  nav ul li {
+    float: left;
+    font-family: Cursive;
+    font-size: 16px;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color:#ffffff;
+    text-decoration: none;
+  }
+  nav ul li:hover {
+    background: #85b6ff;
+    text-decoration-color: rgb(68, 127, 255);
+  }
+
+  ul li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  footer {
+    background-color: rgba(59, 129, 233, 0.733);
+    color: rgba(143, 219, 255, 0.829);
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  h5{
+    color: rgba(143, 219, 255, 0.829);
+    font-size: 40px;
+  }
+  form ul li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: #ffffff;
+  }
+
+  form button{
+    font-family: cursive;
+    font-size: 16px;
+    background-color: rgb(147, 242, 255);
+    border-color: #503ab1;
+  }
+
+  form button:hover{
+      background: #4c3896;
+      border-color: rgb(65, 117, 185);
+      color: #ffffff;
+  }
+    </style>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html"> 🩵Regresar a la pagina :3 </a></li>
+            <li><a href="">🩵Inicio:3 </a></li>
+            <li><a href="#ins">🩵Inscripcion:3 </a></li>
+        </ul>
+    </nav>
+</header>
+<body background="https://i.pinimg.com/564x/2e/1b/5a/2e1b5a9541b1d09a1b521a4e85f1c5ae.jpg">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1> Tratamiento para menores de edad </h1>
+    <main> ¿Te intereso el curso sobre el tratamiento sobre menores? ¿Como tratar con niños pequeños hasta adolecentes?
+     Pues aqui podras aprender acerca de como tratar a un menor de edad siendo un estudiante o ejercer tu carrera profesional.
+    </main>
+
+      <img src="https://i.pinimg.com/564x/66/00/12/660012b649187ffffd48446ec5e53e7d.jpg" width="300" height="300" align="Right">
+      <center>
+        <h2>⚝Informacion</h2>
+      </center>
+    <section>
+    <h3> ★Psicologia infantil★ </h3>
+    <p>La psicología infantil es una rama de la psicología que se enfoca en el estudio del desarrollo humano durante la infancia y la adolescencia. Es una disciplina que busca entender cómo los niños piensan, sienten, se comportan y aprenden a lo largo de su desarrollo, así cómo estas características 
+        cambian con el tiempo. Se basa en la teoría del desarrollo humano, observación del comportamiento y la experiencia.</p>
+
+    <p>La psicología infantil es importante porque los primeros años de vida son cruciales para el desarrollo emocional y social de una persona. La forma en que los niños aprenden a relacionarse con los demás, a resolver problemas y a manejar sus emociones en estos años tempranos tiene un gran impacto
+         en su bienestar y éxito durante el resto de su vida. Por eso es importante la figura del psicólogo infantil, pues es quien puede ayudar a los padres y cuidadores a entender mejor a sus hijos y a proporcionarles el apoyo emocional y psicológico que necesitan</p>
+         <h3>Conceptos claves en la psicología infantil</h3>
+         <p>Para comprender un poco mejor en qué consiste la psicología infantil y su impacto, es importante contemplar algunos concepto fundamentales de la misma:</p>
+
+         <ul type="Circle">
+            <li>Desarrollo cognitivo: es la capacidad de un niño para procesar información y comprender el mundo que lo rodea. Se refiere a la adquisición de habilidades mentales como el lenguaje, la memoria y la resolución de problemas.</li>
+            <li>Desarrollo emocional: hace referencia a cómo los niños aprenden a comprender, regular y expresar sus emociones. Los menores experimentan una amplia gama de emociones, desde la alegría y felicidad hasta la ira y el miedo. 
+                Por ello necesitan aprender a identificar, expresar y regular estas emociones de manera saludable.</li>
+            <li>Desarrollo social: es la forma en la que aprenden a interactuar con los demás y formar relaciones. Los niños necesitan aprender habilidades sociales como compartir, cooperar y comunicarse efectivamente para tener éxito en la vida.</li>
+            <li>Desarrollo psicológico: proceso que experimenta un niño en cuanto a su maduración, física, cognitiva, emocional y social a lo largo de su vida.</li>
+         </ul>
+
+    <h3> ★Psicologia Adolescente★</h3>
+
+    <img src="https://i.pinimg.com/564x/3b/35/85/3b358547ac3166cde285e9b164705354.jpg" width="260" height="260" align="Left">
+
+    <p>La Psicología de la adolescencia se refiere a los tratamientos de la salud mental ofrecidos a pacientes menores de 18 años. Se presta especial atención a los problemas y a las influencias que un adolescente puede encontrar en las diferentes etapas de su desarrollo hasta la edad adulta.</p>
+    <p>Por adolescencia, generalmente, nos referimos al período entre las edades de 12 y 18 años, el cual puede ser un período particularmente difícil para los jóvenes, ya que pueden surgir varios problemas, incluidos problemas de comportamiento, problemas de concentración, depresión, abuso de 
+        sustancias y problemas con la sexualidad.</p>
+
+    <p>La Psicología para adolescentes se puede ofrecer por una amplia gama de razones, y con tratamientos creados para satisfacer las necesidades individuales. Algunas de las condiciones por las cuales un adolescente acude a un psicólogo de la adolescencia son:</p>
+    <img src="https://i.pinimg.com/564x/2e/41/72/2e417295e3c4ce077b8384ed9c3c908b.jpg" width="250" height="250" align="Right">
+        <ul type="Circle">
+            <li>Depresion</li>
+            <li>Ansiedad</li>
+            <li>Problemas de autoestima</li>
+            <li>Problemas de comportamiento</li>
+            <li>Dificultades de comunicación</li>
+            <li>Aversión a la comida</li>
+            <li>Dificultades alimentarias</li>
+            <li>Lidiar con eventos traumáticos</li>
+            <li>Terapia de luto</li>
+            <li>Abordar un diagnóstico médico y tratamiento médico</li>
+        </ul>
+    </section>
+
+    <section>
+    <h2> ⚝¿Que caracteristicas tiene un psicologo que trabaja con niños y adolecentes? </h2>
+    <p>Un psicólogo que dedica su práctica clínica diaria al trabajo con niños y adolescentes debe tener la  capacidad para acercarse a las percepciones de éstos y poder entender cómo piensan o sienten o cuáles pueden ser sus motivaciones. Para ello, habilidades 
+        como la empatía o la calidez se tornan imprescindibles. Ser empático permite al terapeuta ser consciente y admitir el punto de vista del niño, a pesar de que sus emociones, actitudes y conductas sean “un problema” en el contexto familiar.  Por su parte, 
+        mantener una actitud sensible y de calidez ayudará a que el niño o adolescente se sienta más seguro en el espacio que comparten.</p>
+        <img src="https://i.pinimg.com/564x/7e/1b/6a/7e1b6a50851abaa1e216f4b55af5afed.jpg" width="249" height="249" align="Right">
+    <p>Por otro lado, para conectar con el mundo emocional de cualquier niño o adolescente es importantísimo ser consciente de la vulnerabilidad que hay en ellos a la valoración y aprobación de los adultos. Debemos “ver más allá” de las emociones y conductas que
+         nos están mostrando y tener en cuenta que, en muchas ocasiones, éstas pueden estar relacionadas a las expectativas que tienen sus adultos de referencia y a su necesidad de ser aceptados . Para ello, debemos validar sus emociones, pensamientos y conductas
+         con aceptación incondicional. Si perciben esta aceptación, se sentirán seguros y se permitirán expresar sus miedos, enfados y frustraciones con la seguridad de que hay alguien que los entiende, acepta y valida. Es importante que esto se haga con sinceridad, 
+         ya que los niños y adolescentes son muy sensibles a captar la falta de coherencia en los adultos.</p>
+
+         <center>
+         <h4> Videos de referencia </h4>
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Wpiv6gfM7ks" frameborder="0" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/LICqcBrn1Us" frameborder="0" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/xfq3GAkezqg" frameborder="0" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/olnzuMtZdA8" frameborder="0" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/ECCCFPfKZDs" frameborder="0" allowfullscreen></iframe>
+        </center>
+    </section>
+    <br>
+    <br>
+    <section>
+        <h3><a name="ins">Inscripcion del curso</a></h3>
+        <p> Si estas interesado/a en instribirte, por favor llene este formulario, si no estas interesado/a y solo veniste por curiosidad esta
+            muy bien :3 </p>
+            <form action="menor.php" method="GET" onsubmit="return verificarInscripcion()">
+                <ul type="none">
+                    <li>
+                      <label for="name"> Nombre(s):</label>
+                      <input type="text" id="nombre" name="nombre"/>
+                   </li>
+                     <br>
+                   <li>
+                      <label for="name"> Apellido paterno:</label>
+                      <input type="text" id="apellido" name="apellido"/>
+                   </li>
+                      <br>
+                   <li>
+                    <label for="name"> Apellido materno:</label>
+                    <input type="text" id="ape" name="ape"/>
+                   </li>
+                    <br>
+                    <li>
+                        <label for="name"> Fecha de nacimiento</label>
+                        <input type="text" id="fecha" name="fecha"/>
+                       </li>
+                        <br>
+                   <li>
+                        <label for="name"> Edad:</label>
+                        <input type="number" id="edad" name="edad" required min="0"/>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="name"> Genero del paciente:</label><br><br>
+                        <label for="name"> Mujer</label>
+                        <input type="radio" name="rgb" value="mujer"/>
+                        <label for="name"> Hombre</label>
+                        <input type="radio" name="rgb" value="hombre"/>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="mail"> Correo electronico:</label>
+                        <input type="email" id="correo" name="correo"/>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="msg"> ¿Por que te intereso?</label>
+                        <textarea id="msg" name="msg"></textarea>
+                    </li>
+                    <br>
+                    <div class="curso">
+                        <h2> Años de curso </h2>
+                        <select name="cur" value="any">
+                            <option>Seleccione...</option>
+                            <option value="Un año"> Un año</option>
+                            <option value="2 años"> 2 años</option>
+                            <option value="3 años"> 3 años</option>
+                          </div>
+                        </select>
+                    <br>
+               <br>
+                <br>
+                <button type="submit"> Acceder</button> 
+                <br>
+                <br> 
+                <button type="reset"> Borrar </button>
+                </ul>
+              </form>
+    </section>
+
+    <footer>
+        <h5>ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـ Contacto ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ </h5>
+        <p>Dr. Mitsuko Soto</p>
+        <p> Correo: ********@gmail.com </p>
+    </footer>
+</body>
+</html>

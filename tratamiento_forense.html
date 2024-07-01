@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos: Psicologo forense</title>
+    <script>
+        function verificarInscripcion() {
+            var edad = document.getElementById("edad").value;
+            var generoSeleccionado = false;
+  
+            // Verificar si se seleccionó un género (radio button)
+            var generoRadios = document.getElementsByName("rgb");
+            for (var i = 0; i < generoRadios.length; i++) {
+                if (generoRadios[i].checked) {
+                    generoSeleccionado = true;
+                    break;
+                }
+            }
+  
+            // Verificar si la edad es menor a 18
+            if (edad < 18) {
+                alert("Lo sentimos, debes tener al menos 18 años para inscribirte en esta página.");
+                return false; // Detener la inscripción
+            }
+  
+            // Verificar si se seleccionó un género
+            if (!generoSeleccionado) {
+                alert("Por favor selecciona tu género para continuar con la inscripción.");
+                return false; // Detener la inscripción
+            }
+  
+            // Si se pasa todas las validaciones, permitir el envío del formulario
+            return true;
+        }
+    </script>
+    <style>
+        h1{
+    color: rgba(253, 0, 21, 0.849);
+    font-family: cursive;
+    font-size: 34px;
+    
+}
+
+p{
+   color: rgb(255, 255, 255);
+   font-size: 22px;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    color: rgb(219, 35, 81);
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+}
+h3{
+   color:rgb(255, 10, 10);
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 23px;
+}
+
+h4{
+  color: #d34141;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 24px;
+}
+
+main{
+  color: rgb(255, 255, 255);
+   font-size: 22px;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background: rgba(150, 5, 5, 0.521);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  nav {
+    float: left;
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  
+  nav ul li {
+    float: left;
+    font-family: Cursive;
+    font-size: 16px;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color:#ffffff;
+    text-decoration: none;
+  }
+  nav ul li:hover {
+    background: #bd3c3cdc;
+  }
+
+  ul li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: #ffffff;
+  }
+  footer {
+    background-color: rgba(163, 29, 29, 0.637);
+    color: rgba(212, 11, 11, 0.685);
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  table {
+    width: 30%;
+    max-width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: rgba(201, 0, 0, 0.705) 5px solid;
+    color: #ffffff;
+    background-color: #070303;
+  }
+  th {
+    background: rgba(223, 37, 37, 0.815);
+  }
+  
+  table th{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  
+  }
+  
+  table td{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: #3a0000;
+  }
+
+  td, th{
+    padding: 8px;
+    border: 1px solid #ff0000;
+    text-align: left;
+  }
+
+  strong{
+    color: rgb(255, 118, 118);
+  }
+
+  form ul li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: #ffffff;
+  }
+
+  form button{
+    font-family: cursive;
+    font-size: 16px;
+    background-color: rgb(243, 96, 96);
+    border-color: #9b1717;
+  }
+
+  form button:hover{
+      background: #491212;
+      border-color: rgb(247, 141, 141);
+      color: #ffffff;
+  }
+    </style>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Regresar a la pagina :3 </a></li>
+            <li><a href="">Inicio:3 </a></li>
+            <li><a href="#in">Inscripcion:3 </a></li>
+        </ul>
+    </nav>
+</header>
+
+<body background="https://i.pinimg.com/564x/e9/b8/fe/e9b8fe9a59d03b81ad79b73c857b810f.jpg">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <center>
+    <h1>✟ Psicologo forense ✟</h1>
+    </center>
+    <img src="https://i.pinimg.com/564x/54/41/ea/5441ea061478e9b61346f3458e3b2348.jpg" width="200" height="300" align="Left">
+    <main>¿Te intereso el curso de psicologia forense? Estudiar la mente de los criminales no es una tarea facil pero
+        quizas para ti sea un tema muy interesante e intrigante saber como funciona el cerebro de un criminal, ya que
+        el ser humano es misterioso y puede crear maldad en su mente, en esta área del conocimiento se considera interdisciplinaria,
+        ya que mezcla el derecho con la psicología, para facilitar la toma de decisiones.
+    </main>
+    <br>
+    <br>
+    <section>
+    <h2>Informacion</h2>
+    <h3>¿Que se estudia en psicologia forense?</h3>
+    <p>Esta rama de la psicología analiza el comportamiento de las personas implicadas en procesos judiciales para aportar datos, 
+        conocimientos o información específica que ayude a la toma de decisiones dentro de los mismos. Su función principal es auxiliar 
+        o asesorar el sistema de impartición de justicia. Esta área del conocimiento se considera interdisciplinaria, ya que mezcla el 
+        derecho con la psicología, para facilitar la toma de decisiones.</p>
+
+        <p>Los psicólogos forenses actúan como peritos al realizar análisis o informes periciales psicológicos, los cuales pueden ser 
+            solicitados por las partes implicadas, la fiscalía o los jueces. Este tipo de peritajes incluyen un diagnóstico de la situación, 
+            las conductas criminales y las consecuencias de habitar en ciertos ambientes sociales o entornos familiares. La psicología forense es 
+            esencial en las clínicas médico forenses, los juzgados de la niñez y adolescencia, los juzgados de lo penal, los juzgados de trabajo, 
+            así como en la asistencia a víctimas.</p>
+
+            <table align= "Right" bgcolor= "#D9BDFF " border= "3" cellspacing= "10"cellspadding= "10">
+            <tr>
+               
+                <th>(Ejemplo) Charles Manson</th>
+            </tr>
+                <td><img src="https://i.pinimg.com/564x/8c/6c/25/8c6c2582e848b4ae4ae527a4c0c6474f.jpg" width="300" height="300"></td>
+            <tr>
+                <th>Información personal</th>
+            </tr>
+
+            <tr>
+                <td><strong>Apodo</strong>	Charlie</td>
+            </tr>
+            <tr>
+                <td><strong>Nacimiento</strong>	12 de noviembre de 1934
+                    Cincinnati, Ohio, Estados Unidos</td>
+            </tr>
+            <tr>
+                <td><strong>Fallecimiento</strong>	19 de noviembre de 2017 (83 años)
+                    Bakersfield, California, Estados Unidos</td>
+            </tr>
+            <tr>
+                <td><strong>Nacionalidad</strong> Estadounidense</td>
+            </tr>
+            <tr>
+                <th> Informacion profecional</th>
+            </tr>
+            <tr>
+                <td><strong>Ocupacion</strong> Crimnal, musico</td>
+            </tr>
+            <tr>
+                <th>Informacion Criminal</th>
+            </tr>
+            <tr>
+                <td><strong>Cargos criminales</strong> 7 cargos de asesinato por conspiración y 2 
+                cargos de homicidio en primer grado</td>
+            </tr>
+            <tr>
+                <td><strong>Condena</strong> Pena de muerte; conmutada por cadena perpetua</td>
+            </tr>
+            <tr>
+                <td><a href="https://youtu.be/Uo8RBB6AZug">Un psicologo analiza la entrevista de Charles Manson</a></td>
+            </tr>
+        </table>
+
+        <p>Un psicólogo forense penal suele trabajar en clínicas médico-forenses que colaboran con
+            los juzgados y se encargan específicamente de la evaluación psicológica tanto del agresor 
+            como víctimas (en casos de violencia de género, abusos o maltrato infantil, por ejemplo).</p>
+            <img src="https://i.pinimg.com/564x/2f/a2/3e/2fa23e4ac8601f45831e10bedeb7640c.jpg" width="300" height="300" align="Left">
+        <p>También puede desarrollar su labor en juzgados de vigilancia penitenciaria. En este campo sería el encargado de resolver los recursos sobre las solicitudes de libertad condicional o autorizar permisos de salida, entre otras funciones. Además, en tribunales
+            de familia se requiere la intervención forense en los casos de guarda y custodia de menores, la elección del régimen de visitas, la impugnación de tutelas o, incluso, en los procesos de nulidad matrimonial.</p>
+    </section>
+
+    <section>
+        <h2>Objetivo</h2>
+        <p>Los psicólogos forenses evalúan problemas y trastornos conductuales, emocionales y psicológicos. Redacción de informes y artículos sobre los perfiles delictivos, la responsabilidad penal y el estado mental. Muchos investigadores de psicología forense escriben
+            artículos profesionales que explican nuevos descubrimientos. Brindar testimonio de expertos en los juicios y en la sala del tribunal. A partir de su formación y conocimientos psicológicos, testifican sobre recomendaciones de sentencia y tratamiento, competencia
+            y riesgo futuro de comportamiento delictivo. Asesoramiento y tratamiento a las víctimas de delitos. Estos profesionales diseñan y dan servicios de terapia a delincuentes sexuales y otras personas condenadas por delitos.</p>
+
+            <h3>¿Que habilidades se necesita para ser un psicologo forense?</h3>
+            <p>Para trabajar como psicólogo forense es importante tener ciertas habilidades. Algunas de las más destacables son:</p>
+            <ul type="Circle">
+                <li>Alta capacidad de análisis para aportar soluciones en el juicio.</li>
+                <li>Capacidad de comunicación oral y escrito</li>
+                <li>Habilidades de escucha activa y un enfoque sin prejuicios.</li>
+                <li>Capacidad de comprender las reacciones de las personas</li>
+                <li>Sensibilidad y comprensión</li>
+                <li>Aceptar críticas y trabajar bien bajo presión</li>
+                <li>Paciencia y la capacidad de mantener la calma en situaciones estresantes</li>
+            </ul>
+    </section>
+
+    <br>
+    <br>
+
+    <section>
+        <h2>El impacto de la psicología forense en la sociedad</h2>
+        <p>La psicología forense es crucial para la justicia, aportando claridad a casos complejos y mejorando la percepción pública del sistema legal. Su trabajo asegura que las decisiones judiciales se basen en evaluaciones profundas y científicas, promoviendo una justicia más equitativa y accesible.
+            Esta disciplina es indispensable en la protección de los derechos humanos y la promoción de la justicia social.</p>
+            <img src="https://i.pinimg.com/564x/55/5e/0a/555e0a3426fca01a5de3afda6b4f8f62.jpg" width="300" height="300" align="Right">
+            <p>La psicología forense es esencial no solo en el ámbito penal, sino en múltiples sectores judiciales, enriqueciendo el proceso legal con su perspectiva única. Esto resalta que la importancia de la terapia psicológica como herramienta vital para el bienestar emocional y psicológico. 
+            Invitamos a los lectores a considerar la terapia psicológica como un componente esencial de una vida saludable y equilibrada, recordando la relevancia de la salud mental en todos los aspectos de la vida.</p>
+            
+            <h3>El papel clave del psicólogo forense</h3>
+            <p>El psicólogo forense juega un rol fundamental y diverso en el sistema judicial:</p>
+
+            <ul type="Cicle">
+                <li>Evalúan la competencia mental de los acusados.</li>
+                <li>Realizan peritajes psicológicos en casos de custodia de menores.</li>
+                <li>Asesoran en la selección de jurados.</li>
+            </ul>
+            <br>
+            <br>
+            <p>Su labor esclarece aspectos cruciales de los casos y asegura que el proceso legal considere la condición psicológica de los individuos. Además, su participación en la elaboración de perfiles criminales es vital para resolver crímenes y prevenir futuros delitos. La integración de la psicología
+                mejora la precisión de los veredictos y promueve un sistema judicial más humano.</p>
+                <img src="https://i.pinimg.com/564x/94/24/3d/94243dab76e1af8504cf974e1fd48636.jpg" width="200" height="300" align="Left">
+
+            <p>Los psicólogos forenses utilizan técnicas especializadas para determinar la veracidad de las declaraciones y testimonios de personas involucradas en casos legales. Esto ayuda a los tribunales a tomar decisiones informadas y a reconocer posibles falsedades o inconsistencias en las pruebas testimoniales</p>
+                <img src="https://i.pinimg.com/564x/65/bb/66/65bb66e98293987cf4158a5faabc9327.jpg" width="200" height="300" align="Right">
+                <h4>¿Qué desafíos y dificultades enfrentan los psicólogos forenses en su trabajo cotidiano?</h4>
+                <p>La psicología forense es una disciplina fascinante pero también desafiante. Los psicólogos forenses se encuentran con diversas dificultades en su trabajo diario.
+                    Uno de los principales desafíos es lidiar con la falta de colaboración por parte de los involucrados en los casos legales. Tanto víctimas como perpetradores pueden ser reticentes a revelar información importante debido a la vergüenza, el miedo o la desconfianza. Los psicólogos
+                    forenses deben ser hábiles para establecer un ambiente de confianza y alentar a las personas a compartir información relevante para el caso.</p>
+    </section>
+    <br>
+    <br>
+    <section>
+        <h3><a name="in">Inscripcion del curso</a></h3>
+        <p> Si estas interesado/a en instribirte, por favor llene este formulario, si no estas interesado/a y solo veniste por curiosidad esta
+            muy bien :3 </p>
+            <form action="forense.php" method="GET" onsubmit="return verificarInscripcion()">
+                <ul type="none">
+                    <li>
+                      <label for="name"> Nombre(s):</label>
+                      <input type="text" id="nombre" name="nombre"/>
+                   </li>
+                     <br>
+                   <li>
+                      <label for="name"> Apellido paterno:</label>
+                      <input type="text" id="apellido" name="apellido"/>
+                   </li>
+                      <br>
+                   <li>
+                    <label for="name"> Apellido materno:</label>
+                    <input type="text" id="ape" name="ape"/>
+                   </li>
+                    <br>
+                    <li>
+                        <label for="name"> Fecha de nacimiento</label>
+                        <input type="text" id="fecha" name="fecha"/>
+                       </li>
+                        <br>
+                   <li>
+                        <label for="name"> Edad:</label>
+                        <input type="number" id="edad" name="edad" required min="0"/>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="name"> Genero del paciente:</label><br><br>
+                        <label for="name"> Mujer</label>
+                        <input type="radio" name="rgb" value="mujer"/>
+                        <label for="name"> Hombre</label>
+                        <input type="radio" name="rgb" value="hombre"/>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="mail"> Correo electronico:</label>
+                        <input type="email" id="correo" name="correo"/>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="msg"> ¿Por que te intereso?</label>
+                        <textarea id="msg" name="msg"></textarea>
+                    </li>
+                    <br>
+                    <div class="curso">
+                        <h2> Años de curso </h2>
+                        <select name="cur" value="any">
+                            <option>Seleccione...</option>
+                            <option value="Un año"> Un año</option>
+                            <option value="2 años"> 2 años</option>
+                            <option value="3 años"> 3 años</option>
+                          </div>
+                        </select>
+                    <br>
+               <br>
+                <br>
+                <button type="submit"> Acceder</button> 
+                <br>
+                <br> 
+                <button type="reset"> Borrar </button>
+                </ul>
+              </form>
+  
+
+    </section>
+    <footer>
+        <h3><a name="contac">ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـ Contacto ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ </a></h3>
+        <p>Dr. Mitsuko Soto</p>
+        <p> Correo: ********@gmail.com </p>
+    </footer>
+</body>
+</html>
